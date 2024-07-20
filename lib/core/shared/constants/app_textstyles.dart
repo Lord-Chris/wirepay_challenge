@@ -25,12 +25,26 @@ class AppTextStyles {
     );
   }
 
-  // // Regular
-  // /// Default color - Lightcolor2
-  // static final regular11 = TextStyle(
-  //   fontSize: 11,
-  //   fontWeight: FontWeight.normal,
-  //   height: 1.3,
-  //   color: AppColors.lightColor2,
-  // );
+  static const avenirMedium24 = TextStyle(
+    fontFamily: avenir,
+    height: 1.36,
+    fontSize: 24,
+    fontWeight: FontWeight.w500,
+  );
+
+  /// Size: 32, Weight: Bold, Family: Bricolage-Grotesque
+  static const headingSheetTitle = TextStyle(
+    fontSize: 32,
+    height: 1.125,
+    fontWeight: FontWeight.bold,
+    fontFamily: bricolage,
+  );
+
+  /// Size: 14, Weight: Regular, Family: NunitoSans
+  static const body2Regular = TextStyle(
+    fontSize: 14,
+    height: 1.29,
+    fontWeight: FontWeight.normal,
+    fontFamily: nunitoSans,
+  );
 }

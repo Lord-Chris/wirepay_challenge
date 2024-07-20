@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../features/authentication/presentation/passcode_view.dart';
 import 'routes.dart';
 
 abstract class AppRouter {
@@ -11,7 +12,7 @@ abstract class AppRouter {
       case Routes.passcode:
         return _getPageRoute(
           settings: settings,
-          view: const Placeholder(),
+          view: const PasscodeView(),
         );
 
       case Routes.homeView:
