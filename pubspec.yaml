@@ -99,43 +99,43 @@ flutter:
 
     - family: NunitoSans
       fonts:
-        - asset: assets/fonts/nunito-sans/NunitoSans-ExtraLight.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-ExtraLight.ttf
           weight: 200
-        - asset: assets/fonts/nunito-sans/NunitoSans-ExtraLightItalic.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-ExtraLightItalic.ttf
           weight: 200
           style: italic
-        - asset: assets/fonts/nunito-sans/NunitoSans-Light.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-Light.ttf
           weight: 300
-        - asset: assets/fonts/nunito-sans/NunitoSans-LightItalic.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-LightItalic.ttf
           weight: 300
           style: italic
-        - asset: assets/fonts/nunito-sans/NunitoSans-Regular.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-Regular.ttf
           weight: 400
-        - asset: assets/fonts/nunito-sans/NunitoSans-Italic.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-Italic.ttf
           weight: 400
           style: italic
-        - asset: assets/fonts/nunito-sans/NunitoSans-Medium.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-Medium.ttf
           weight: 500 
-        - asset: assets/fonts/nunito-sans/NunitoSans-MediumItalic.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-MediumItalic.ttf
           weight: 500
           style: italic
-        - asset: assets/fonts/nunito-sans/NunitoSans-SemiBold.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-SemiBold.ttf
           weight: 600
-        - asset: assets/fonts/nunito-sans/NunitoSans-SemiBoldItalic.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-SemiBoldItalic.ttf
           weight: 600
           style: italic
-        - asset: assets/fonts/nunito-sans/NunitoSans-Bold.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-Bold.ttf
           weight: 700
-        - asset: assets/fonts/nunito-sans/NunitoSans-BoldItalic.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-BoldItalic.ttf
           weight: 700
           style: italic
-        - asset: assets/fonts/nunito-sans/NunitoSans-ExtraBold.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-ExtraBold.ttf
           weight: 800
-        - asset: assets/fonts/nunito-sans/NunitoSans-ExtraBoldItalic.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-ExtraBoldItalic.ttf
           weight: 800
           style: italic
-        - asset: assets/fonts/nunito-sans/NunitoSans-Black.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-Black.ttf
           weight: 900
-        - asset: assets/fonts/nunito-sans/NunitoSans-BlackItalic.ttf
+        - asset: assets/fonts/nunito-sans/NunitoSans_10pt-BlackItalic.ttf
           weight: 900
           style: italic
