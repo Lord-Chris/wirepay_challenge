@@ -71,13 +71,18 @@ class PasscodeView extends HookWidget {
                       (index2) {
                         final val = index * 3 + index2 + 1;
                         return SizedBox.square(
-                          dimension: 50,
-                          child: TextButton(
-                            onPressed: () => viewModel.onDigitPress('$val'),
-                            child: Text(
-                              '$val',
-                              style: AppTextStyles.avenirMedium24.copyWith(
-                                color: AppColors.darkRegular,
+                          dimension: 70,
+                          child: Center(
+                            child: SizedBox.square(
+                              dimension: 40,
+                              child: TextButton(
+                                onPressed: () => viewModel.onDigitPress('$val'),
+                                child: Text(
+                                  '$val',
+                                  style: AppTextStyles.avenirMedium24.copyWith(
+                                    color: AppColors.darkRegular,
+                                  ),
+                                ),
                               ),
                             ),
                           ),
@@ -88,14 +93,13 @@ class PasscodeView extends HookWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  if (viewModel.passcode.isNotEmpty)
-                    SizedBox.square(
-                      dimension: 50,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                if (viewModel.passcode.isNotEmpty)
+                  SizedBox.square(
+                    dimension: 70,
+                    child: Center(
                       child: TextButton(
                         onPressed: viewModel.onDeletePress,
                         child: Center(
@@ -103,27 +107,38 @@ class PasscodeView extends HookWidget {
                         ),
                       ),
                     ),
-                  SizedBox.square(
-                    dimension: 50,
-                    child: TextButton(
-                      onPressed: () => viewModel.onDigitPress('0'),
-                      child: Text(
-                        '0',
-                        style: AppTextStyles.avenirMedium24.copyWith(
-                          color: AppColors.darkRegular,
+                  ),
+                SizedBox.square(
+                  dimension: 70,
+                  child: Center(
+                    child: SizedBox.square(
+                      dimension: 40,
+                      child: TextButton(
+                        onPressed: () => viewModel.onDigitPress('0'),
+                        child: Text(
+                          '0',
+                          style: AppTextStyles.avenirMedium24.copyWith(
+                            color: AppColors.darkRegular,
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  if (viewModel.passcode.isNotEmpty)
-                    SizedBox.square(
-                      dimension: 50,
-                      child: Center(
-                        child: SvgPicture.asset(AppSvgAssets.nextButton),
+                ),
+                if (viewModel.passcode.isNotEmpty)
+                  SizedBox.square(
+                    dimension: 70,
+                    child: Center(
+                      child: TextButton(
+                        onPressed: viewModel.goToHomeView,
+                        child: SvgPicture.asset(
+                          AppSvgAssets.nextButton,
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
-                ],
-              ),
+                  ),
+              ],
             ),
             Spacing.vertRegular(),
           ],

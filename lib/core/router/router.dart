@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../features/authentication/presentation/passcode_view.dart';
+import '../../features/dashboard/presentation/home_view.dart';
 import 'routes.dart';
 
 abstract class AppRouter {
@@ -18,7 +19,7 @@ abstract class AppRouter {
       case Routes.homeView:
         return _getPageRoute(
           settings: settings,
-          view: const Placeholder(),
+          view: const HomeView(),
         );
 
       default:

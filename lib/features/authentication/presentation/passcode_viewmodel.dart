@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/router/_router.dart';
+
 class PasscodeViewModel extends ChangeNotifier {
   String _passcode = '';
   String get passcode => _passcode;
@@ -14,5 +16,9 @@ class PasscodeViewModel extends ChangeNotifier {
     if (_passcode.isEmpty) return;
     _passcode = _passcode.substring(0, _passcode.length - 1);
     notifyListeners();
+  }
+
+  void goToHomeView() {
+    AppNavigator.pushNamed(Routes.homeView);
   }
 }

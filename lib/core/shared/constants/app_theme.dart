@@ -4,11 +4,28 @@ import '_constants.dart';
 
 class AppTheme {
   static final theme = ThemeData(
+    useMaterial3: true,
     primarySwatch: Colors.blue,
     colorScheme: ColorScheme.fromSeed(seedColor: AppColors.darkPrimary),
     fontFamily: AppTextStyles.nunitoSans,
-    // scaffoldBackgroundColor: AppColors.gray50,
-    useMaterial3: true,
+    scaffoldBackgroundColor: AppColors.lightBackground,
+    appBarTheme: const AppBarTheme(
+      backgroundColor: AppColors.lightBackground,
+      elevation: 0,
+      surfaceTintColor: AppColors.lightBackground,
+    ),
+    dividerColor: AppColors.darkBorders,
+    dividerTheme: const DividerThemeData(
+      thickness: 1,
+      color: AppColors.darkBorders,
+    ),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: AppColors.white,
+      selectedItemColor: AppColors.darkPrimary,
+      unselectedItemColor: AppColors.darkLow,
+      selectedLabelStyle: AppTextStyles.body3Header,
+      unselectedLabelStyle: AppTextStyles.body3Regular,
+    ),
     // inputDecorationTheme: InputDecorationTheme(
     //   contentPadding: const EdgeInsets.symmetric(vertical: 10, horizontal: 14),
     //   border: OutlineInputBorder(
