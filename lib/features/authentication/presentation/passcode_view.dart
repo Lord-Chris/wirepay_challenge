@@ -6,9 +6,9 @@ import '../../../core/shared/constants/_constants.dart';
 import 'passcode_viewmodel.dart';
 
 class PasscodeView extends HookWidget {
-  const PasscodeView({super.key});
+  PasscodeView({super.key});
 
-  static final model = PasscodeViewModel();
+  final model = PasscodeViewModel();
   @override
   Widget build(BuildContext context) {
     final viewModel = useListenable(model);

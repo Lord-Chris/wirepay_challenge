@@ -13,7 +13,7 @@ abstract class AppRouter {
       case Routes.passcode:
         return _getPageRoute(
           settings: settings,
-          view: const PasscodeView(),
+          view: PasscodeView(),
         );
 
       case Routes.homeView:
